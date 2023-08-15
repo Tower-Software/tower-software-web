@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: rgb(128,128,128,0.8);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-right: 200px; /* Ajusta el valor según la separación deseada */
+}
+
+nav li {
+  margin: 0 10px;
+  text-align: center;
+  line-height: inherit;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.homeSection {
+  background-color: gray;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+}
+
+.servicesSection {
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 20px;
+}
+
+.servicesSection a{
+  color: black;
+  text-decoration: none;
+}
+
+.image-container {
+  display: inline-block; /* Mantiene las imágenes en línea horizontal */
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.gallery-image {
+  width: 400px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+  height: 300px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+}
+
+.servicesTitle {
+  font-size: 3rem;
+  margin-top: 20px; /* Espacio superior para separar el título de las imágenes */
+}
+
+.third-section {
+  padding: 20px;
+}
+
+.third-section .section-content {
+  display: flex;
+  flex-direction: row; /* Reversa la dirección de los elementos */
+  align-items: center;
+}
+
+.third-section .section-text {
+  flex: 1;
+}
+
+.third-section .section-text h2 {
+  font-size: 3.5rem; /* Ajusta el tamaño del título según tus necesidades */
+  padding-left: 100px;
+  
+}
+
+.third-section .section-text p {
+  font-size: 1.5rem; /* Ajusta el tamaño del párrafo según tus necesidades */
+  padding-left: 100px;
+  line-height: 1.9;
+}
+
+.third-section .section-image {
+  flex: 1;
+  text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.third-section .section-image img{
+  width: 100vh;
+  height: 80vh;
+}
