@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tower-software-web/static/css/main.3e715bc1.css",
+    "main.js": "/tower-software-web/static/js/main.a182dd26.js",
+    "index.html": "/tower-software-web/index.html",
+    "main.3e715bc1.css.map": "/tower-software-web/static/css/main.3e715bc1.css.map",
+    "main.a182dd26.js.map": "/tower-software-web/static/js/main.a182dd26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e715bc1.css",
+    "static/js/main.a182dd26.js"
+  ]
+}
