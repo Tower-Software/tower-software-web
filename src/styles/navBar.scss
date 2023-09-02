@@ -1,0 +1,59 @@
+.layoutHeader {
+  z-index: 1000;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.rightToLeftFade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.rightToLeftFade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.rightToLeftFade-exit {
+  opacity: 1;
+}
+.rightToLeftFade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.logo {
+  margin-top: 5px;
+  width: 150px;
+  height: auto;
+}
+
+.navButton {
+  color: white !important;
+  box-shadow: unset !important;
+  background-color: unset !important;
+  border: none !important;
+  border-radius: unset !important;
+}
+.navButton:hover {
+  color: white !important;
+  background-color: #555 !important;
+}
+
+
+.contactUsButton {
+  box-shadow: unset !important;
+  border-radius: unset !important;
+  border: unset !important;
+  color: white !important;
+  background-color: #555 !important;
+}
+.contactUsButton:hover {
+  color: white !important;
+  box-shadow: unset !important;
+  background-color: #55555569 !important;
+  border: none !important;
+  border-radius: unset !important;
+}
