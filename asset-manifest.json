@@ -1,13 +1,24 @@
 {
   "files": {
     "main.css": "/tower-software-web/static/css/main.3e715bc1.css",
-    "main.js": "/tower-software-web/static/js/main.c4e63d45.js",
+    "main.js": "/tower-software-web/static/js/main.919ccf92.js",
+    "static/media/SoftwareDevelopment.jpg": "/tower-software-web/static/media/SoftwareDevelopment.ad2a8d086c32b5044050.jpg",
+    "static/media/WebDevelopment.jpg": "/tower-software-web/static/media/WebDevelopment.2b2c843ad3d421de8a9c.jpg",
+    "static/media/AppDevelopment.jpg": "/tower-software-web/static/media/AppDevelopment.09aea1cfb84da4112f5a.jpg",
+    "static/media/BusinessInteligence.jpg": "/tower-software-web/static/media/BusinessInteligence.a82941bc6688ce3322a4.jpg",
+    "static/media/sitedevelopment.png": "/tower-software-web/static/media/sitedevelopment.1161ee89e149645c1825.png",
+    "static/media/Tellusaboutyourpage.png": "/tower-software-web/static/media/Tellusaboutyourpage.5d42c9199a5b2758c47c.png",
+    "static/media/Designandstructure.png": "/tower-software-web/static/media/Designandstructure.0e81916e7e24a5fe7bb6.png",
+    "static/media/dataimage.png": "/tower-software-web/static/media/dataimage.daf5f0312ac02f6327d2.png",
+    "static/media/finished.png": "/tower-software-web/static/media/finished.fd5c91cbee5c050045e9.png",
+    "static/media/testing.png": "/tower-software-web/static/media/testing.e4c2ffa8bfe43a32458e.png",
+    "static/media/logo.png": "/tower-software-web/static/media/logo.bf27d3e5fa7f8e119404.png",
     "index.html": "/tower-software-web/index.html",
     "main.3e715bc1.css.map": "/tower-software-web/static/css/main.3e715bc1.css.map",
-    "main.c4e63d45.js.map": "/tower-software-web/static/js/main.c4e63d45.js.map"
+    "main.919ccf92.js.map": "/tower-software-web/static/js/main.919ccf92.js.map"
   },
   "entrypoints": [
     "static/css/main.3e715bc1.css",
-    "static/js/main.c4e63d45.js"
+    "static/js/main.919ccf92.js"
   ]
 }
