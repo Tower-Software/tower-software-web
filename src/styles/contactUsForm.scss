@@ -1,7 +1,7 @@
 .contactUsForm {
   max-width: 600px;
   margin: 50px auto 100px auto;
-
+  
   .ant-input, .ant-select-selector {
     border-radius: 1px !important;
     border-top: none !important;
@@ -21,4 +21,9 @@
 
 .ant-spin, .ant-spin-text{
   color: rgb(88, 88, 88) !important;
+}
+
+.ant-form-item-control-input-content > div > div {
+  display: flex;
+  place-content: center;
 }

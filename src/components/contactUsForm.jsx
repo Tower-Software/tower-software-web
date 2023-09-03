@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Form, Button, Select, Input, Spin, Result } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons';
 import TextArea from 'antd/es/input/TextArea';
 import { EMAIL_SERVICE_ID, EMAIL_SERVICE_TEMPLATE, EMAIL_SERVICE_PUBLIC_KEY } from '../config/app.config';
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import '../styles/contactUsForm.scss';
 
 const { Option } = Select;
@@ -11,6 +12,8 @@ const { Option } = Select;
 const ContactUsForm = () => {
   const [loading, setLoading] = useState(false);
   const [emailSendedOk, setEmailSendedOk] = useState(null);
+  const [recaptcha, setRecaptcha] = useState(null);
+  const refCaptcha = useRef();
 
   const onFinish = ({ name, email, service, message }) => {
     setLoading(true);
@@ -19,18 +22,21 @@ const ContactUsForm = () => {
     
     const sendMessage = async () => {
       try {
-        await emailjs.send(EMAIL_SERVICE_ID, EMAIL_SERVICE_TEMPLATE,
-          {
-            from_name: subject,
-            message: `
-              ${message} 
-              
-              EMAIL: ${email}
-            `,
-          }, 
-          EMAIL_SERVICE_PUBLIC_KEY);    
+        const params = {
+          'g-recaptcha-response': recaptcha,
+          from_name: subject,
+          message: 
+          `
+            ${message} 
+            
+            EMAIL: ${email}
+          `,
+        }
 
-          setEmailSendedOk(true);
+        await emailjs.send(EMAIL_SERVICE_ID, EMAIL_SERVICE_TEMPLATE, params, EMAIL_SERVICE_PUBLIC_KEY);    
+        refCaptcha.current.reset();
+        setRecaptcha(null);
+        setEmailSendedOk(true);
       } catch (_) {
         setEmailSendedOk(false);
       } finally {
@@ -89,9 +95,22 @@ const ContactUsForm = () => {
             <TextArea placeholder="Message" size="large" />
           </Form.Item>
 
+          <Form.Item 
+            extra={[ <Input value={recaptcha} style={{ display: "none" }} /> ]} 
+            name="recaptcha" 
+            rules={[ { required: true, message: 'Solve the recaptcha.' } ]}
+          >
+            <ReCAPTCHA
+              ref={refCaptcha}
+              sitekey="6LcIsvQnAAAAAEYMdTiAxzTIwsMDu0H9bDWQwSA8"
+              onChange={token => setRecaptcha(token)}
+            />
+          </Form.Item>
+
           <Form.Item>
             <Button htmlType="submit">Send</Button>
           </Form.Item>
+          
         </Form>
       </Spin>
     </>

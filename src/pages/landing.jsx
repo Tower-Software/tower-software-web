@@ -1,17 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Row, Space, Typography, Col } from 'antd';
-import '../styles/landing.scss';
 import ContactUsForm from '../components/contactUsForm';
+import WebDevelopmentJpg from '../assets/WebDevelopment.jpg';
+import AppDevelopmentJpg from '../assets/AppDevelopment.jpg';
+import BusinessInteligenceJpg from '../assets/BusinessInteligence.jpg';
+import SoftwareDevelopmentJpg from '../assets/SoftwareDevelopment.jpg';
+import DataImagePng from '../assets/dataimage.png';
+import LogoPng from '../assets/logo.png';
+import '../styles/landing.scss';
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 const Landing = () => {
   return (
-    <div>
+    <div id="home">
       <section class="homeSection">
-        <img src="img/logo.png" alt="Logo" />
+        <img src={LogoPng} alt="Logo" />
       </section>
 
       <section id="services" className="servicesSection">
@@ -21,7 +27,7 @@ const Landing = () => {
             <Card 
               className="serviceCard"
               hoverable
-              cover={<img src="img/WebDevelopment.jpg" alt="Imagen 1" class="serviceImg" />}
+              cover={<img src={WebDevelopmentJpg} alt="Imagen 1" class="serviceImg" />}
             >
               <Meta title="Web Development" description="Go" />
             </Card>
@@ -29,21 +35,21 @@ const Landing = () => {
           <Card  
             className="serviceCard"
             hoverable
-            cover={<img src="img/AppDevelopment.jpg" alt="Imagen 2" class="serviceImg" />}
+            cover={<img src={AppDevelopmentJpg} alt="Imagen 2" class="serviceImg" />}
           >
            <Meta title="App Development" description="Go" />
           </Card>
           <Card   
             className="serviceCard"
             hoverable
-            cover={<img src="img/BusinessInteligence.jpg" alt="Imagen 3" class="serviceImg" />}
+            cover={<img src={BusinessInteligenceJpg} alt="Imagen 3" class="serviceImg" />}
           >
            <Meta title="Business Inteligence" description="Go" />
           </Card>
           <Card 
             className="serviceCard"
             hoverable
-            cover={<img src="img/SoftwareDevelopment.jpg" alt="Imagen 4" class="serviceImg" />}
+            cover={<img src={SoftwareDevelopmentJpg} alt="Imagen 4" class="serviceImg" />}
           >
            <Meta title="Software Development" description="Go" />
           </Card>
@@ -60,7 +66,7 @@ const Landing = () => {
             </Paragraph>
           </Col>
           <Col md={24} xl={12}>
-            <img className="reinventionImg" src="img/dataimage.png" alt="reinvention" />
+            <img className="reinventionImg" src={DataImagePng} alt="reinvention" />
           </Col>
         </Row>
       </section>
