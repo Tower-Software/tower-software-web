@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tower-software-web/static/css/main.3e715bc1.css",
-    "main.js": "/tower-software-web/static/js/main.919ccf92.js",
+    "main.css": "/tower-software-web/static/css/main.c4a61a25.css",
+    "main.js": "/tower-software-web/static/js/main.f7061eec.js",
     "static/media/SoftwareDevelopment.jpg": "/tower-software-web/static/media/SoftwareDevelopment.ad2a8d086c32b5044050.jpg",
     "static/media/WebDevelopment.jpg": "/tower-software-web/static/media/WebDevelopment.2b2c843ad3d421de8a9c.jpg",
     "static/media/AppDevelopment.jpg": "/tower-software-web/static/media/AppDevelopment.09aea1cfb84da4112f5a.jpg",
@@ -14,11 +14,11 @@
     "static/media/testing.png": "/tower-software-web/static/media/testing.e4c2ffa8bfe43a32458e.png",
     "static/media/logo.png": "/tower-software-web/static/media/logo.bf27d3e5fa7f8e119404.png",
     "index.html": "/tower-software-web/index.html",
-    "main.3e715bc1.css.map": "/tower-software-web/static/css/main.3e715bc1.css.map",
-    "main.919ccf92.js.map": "/tower-software-web/static/js/main.919ccf92.js.map"
+    "main.c4a61a25.css.map": "/tower-software-web/static/css/main.c4a61a25.css.map",
+    "main.f7061eec.js.map": "/tower-software-web/static/js/main.f7061eec.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e715bc1.css",
-    "static/js/main.919ccf92.js"
+    "static/css/main.c4a61a25.css",
+    "static/js/main.f7061eec.js"
   ]
 }
