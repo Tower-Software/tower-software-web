@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tower-software-web/static/css/main.3e715bc1.css",
-    "main.js": "/tower-software-web/static/js/main.96676a61.js",
+    "main.js": "/tower-software-web/static/js/main.c4e63d45.js",
     "index.html": "/tower-software-web/index.html",
     "main.3e715bc1.css.map": "/tower-software-web/static/css/main.3e715bc1.css.map",
-    "main.96676a61.js.map": "/tower-software-web/static/js/main.96676a61.js.map"
+    "main.c4e63d45.js.map": "/tower-software-web/static/js/main.c4e63d45.js.map"
   },
   "entrypoints": [
     "static/css/main.3e715bc1.css",
-    "static/js/main.96676a61.js"
+    "static/js/main.c4e63d45.js"
   ]
 }
