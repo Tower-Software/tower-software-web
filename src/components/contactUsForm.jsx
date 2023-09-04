@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Form, Button, Select, Input, Spin, Result, Tag } from 'antd'
+import { Form, Button, Select, Input, Spin, Result } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons';
 import TextArea from 'antd/es/input/TextArea';
 import { EMAIL_SERVICE_ID, EMAIL_SERVICE_TEMPLATE, EMAIL_SERVICE_PUBLIC_KEY } from '../config/app.config';
