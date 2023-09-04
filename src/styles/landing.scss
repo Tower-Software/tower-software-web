@@ -4,16 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.logo {
-  max-width: 200px;
+  .logo {
+    width: 500px !important;
+  }
 }
 
 .servicesSection, .section {
   text-align: center; 
   margin: 0 auto;
-
   padding: 20px;
 }
 
@@ -49,6 +48,21 @@
 
 /* Small devices (portrait tablets and large phones, 500px and up) */
 @media only screen and (max-width: 500px) {
+  .servicesSection, .section {
+    padding: 10px;
+  }
+
+  .homeSection {
+    .logo {
+      width: 310px !important;
+    }
+  }
+
+  .serviceImg {
+    width: 300px !important; 
+    height: 200px; 
+  }
+
   .reinventionImg {
     width: 90vw;
     height: auto;

@@ -22,9 +22,10 @@ const NavBar = () => {
         isMobile && 
         <Menu 
           width="100%"
-          customBurgerIcon={<MenuOutlined className="openMenuButton" />}
-          customCrossIcon={<CloseOutlined className="closeMenuButton" />}
+          customBurgerIcon={<MenuOutlined onClick={() => setMenuOpen(true)} className="openMenuButton" />}
+          customCrossIcon={<CloseOutlined onClick={() => setMenuOpen(false)} className="closeMenuButton" />}
           isOpen={menuOpen}
+          onClose={() => setMenuOpen(false)} 
           onOpen={() => setMenuOpen(true)}
         >
           <Space style={{ margin: "15px 10px 15px 0", textAlign: "center" }} onClick={() => setMenuOpen(false)}>

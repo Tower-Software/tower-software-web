@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <div id="home">
       <section class="homeSection">
-        <img src={LogoPng} alt="Logo" />
+        <img src={LogoPng} alt="Logo" className="logo" />
       </section>
 
       <section id="services" className="servicesSection">
