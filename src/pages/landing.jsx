@@ -8,6 +8,7 @@ import BusinessInteligenceJpg from '../assets/BusinessInteligence.jpg';
 import SoftwareDevelopmentJpg from '../assets/SoftwareDevelopment.jpg';
 import DataImagePng from '../assets/dataimage.png';
 import LogoPng from '../assets/logo.png';
+import SoonTag from '../components/soonTag';
 import '../styles/landing.scss';
 
 const { Title, Paragraph } = Typography;
@@ -44,7 +45,7 @@ const Landing = () => {
             hoverable
             cover={<img src={BusinessInteligenceJpg} alt="Imagen 3" class="serviceImg" />}
           >
-           <Meta title="Business Inteligence" description="Go" />
+           <Meta title={<>Business Inteligence <SoonTag /></>} description="Go" />
           </Card>
           <Card 
             className="serviceCard"

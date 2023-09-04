@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react'
-import { Form, Button, Select, Input, Spin, Result } from 'antd'
+import { Form, Button, Select, Input, Spin, Result, Tag } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons';
 import TextArea from 'antd/es/input/TextArea';
 import { EMAIL_SERVICE_ID, EMAIL_SERVICE_TEMPLATE, EMAIL_SERVICE_PUBLIC_KEY } from '../config/app.config';
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
+import SoonTag from '../components/soonTag';
 import '../styles/contactUsForm.scss';
 
 const { Option } = Select;
@@ -87,7 +88,7 @@ const ContactUsForm = () => {
               <Option value="App Development" />
               <Option value="Software Development" />
               <Option value="Web Development" />
-              <Option value="Business Inteligence" disabled/>
+              <Option value={<>Business Inteligence <SoonTag /></>} disabled/>
             </Select>
           </Form.Item>
 
